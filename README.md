@@ -8,11 +8,11 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 
 ## Models
 
-| Model | Type | Returns | Status |
-|-------|------|---------|--------|
+| Model | Type | Highlights | Status |
+|-------|------|------------|--------|
 | [Dick's Sporting Goods LBO](./dks-lbo/) | Leveraged Buyout | 30.4% IRR / 3.8x MOIC | ✅ Complete |
-| Coca-Cola DCF | Discounted Cash Flow | — | 🔧 In Progress |
-| Nvidia Scenario Analysis | Scenario / Sensitivity | — | 🔧 In Progress |
+| [AMD — DCF & Initiation](./amd-dcf/) | Discounted Cash Flow | OVERWEIGHT $145 PT · +20.8% upside | ✅ Complete |
+| [Ferrari N.V. — Equity Research](./ferrari-dcf/) | DCF + Trading Comps (Blended) | OVERWEIGHT $450 PT · +19.8% upside | ✅ Complete |
 
 ---
 
