@@ -2,7 +2,7 @@
 
 **Francisco Rodriguez** — Dallas, TX | [LinkedIn](https://linkedin.com/in/francisco-rodriguez) | [GitHub](https://github.com/Azyo1)
 
-Buy-side and sell-side valuation models built to institutional standards. Each model includes a full Excel workbook, deal memorandum, and interview Q&A.
+Buy-side and sell-side valuation models built to institutional standards. Each model includes a full Excel workbook, deal memorandum, and interview Q&A covering the 10 most common questions asked in finance interviews.
 
 ---
 

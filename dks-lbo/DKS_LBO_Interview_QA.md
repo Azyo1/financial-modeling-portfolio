@@ -134,4 +134,70 @@ EBITDA -10% *and* no margin expansion *and* exit multiple compresses to 8x:
 
 ---
 
+---
+
+## Q7: Walk me through the Sources & Uses.
+
+Sources total ~$13.3B. The capital structure is roughly 50/50 debt and equity:
+
+| Source | Amount | % of Total |
+|--------|--------|------------|
+| Term Loan B (5.5× EBITDA) | ~$8.1B | ~61% |
+| Equity Check (Sponsor) | ~$5.2B | ~39% |
+| **Total Sources** | **~$13.3B** | 100% |
+
+| Use | Amount |
+|-----|--------|
+| Purchase of Equity (9.0× EBITDA) | ~$13.3B |
+| Transaction Fees & Expenses | ~$200M |
+| **Total Uses** | **~$13.5B** |
+
+**The equity check is the residual** — after underwriting the maximum debt the business can support at a comfortable coverage ratio, equity fills the gap. At 5.5×, you're funding roughly 39% of the transaction in equity, which is conservative relative to the historical LBO average (~30% equity). That conservatism is intentional: consumer retail lenders want more equity cushion.
+
+**Why it matters:** The equity check is your denominator in MOIC and IRR. Everything that drives enterprise value growth above the debt repayment flows 100% to equity. The deal's returns are entirely a function of EBITDA growth, debt paydown, and exit multiple — all of which are applied against this initial $5.2B equity investment.
+
+---
+
+## Q8: Why a 9.0× entry multiple? Isn't that expensive for a retailer?
+
+On an absolute basis, 9.0× feels rich for retail. Most traditional brick-and-mortar retailers trade and transact at 5–7× EBITDA. But DKS deserves a premium for three specific reasons:
+
+1. **Structural monopoly.** Sports Authority (2016) and Modell's (2020) are both gone. DKS is the last national big-box sporting goods retailer in the U.S. There is no credible competitor at national scale. That market position is worth paying up for.
+2. **Private label margin profile.** The EBITDA margin expansion story (13% → 16.5%) is what differentiates DKS from a commodity retailer. You're not paying 9× for a generic retailer — you're paying 9× for a retailer that is actively converting its revenue mix toward 60–70% gross margin private label products.
+3. **Real estate optionality.** DKS controls ~850 stores, many on favorable long-term leases. The House of Sport format rollout (higher-margin experiential stores) is a free real estate re-use option not captured in the LTM EBITDA.
+
+**Comparable transactions:** The closest public comps for this type of transaction — a dominant, category-leader retailer in a consolidating market — transact at 8–10×. 9× is at the midpoint, not the ceiling.
+
+---
+
+## Q9: How does the cash sweep work and why does it matter for returns?
+
+The Term Loan B has two debt service components: (1) mandatory amortization of 1% per year on the original principal (~$94M/year), and (2) a **cash sweep** that directs a percentage of excess cash flow toward voluntary prepayment.
+
+In this model, I assume 75% of excess free cash flow (after mandatory amortization, interest, and capex) sweeps to pay down the TLB each year. Here's why the sweep matters:
+
+- **It reduces exit net debt.** By Year 5, the cash sweep has paid down approximately $3.4B of principal beyond mandatory amortization, dropping net debt from ~$8.1B at entry to ~$4.7B at exit. That $3.4B flows directly to equity proceeds at exit — dollar for dollar.
+- **It's compounding.** Lower debt → lower interest payments → more FCF available to sweep → lower debt. The sweep accelerates itself as the hold period progresses.
+- **It decouples exit equity value from exit multiple.** Even if the exit multiple compresses, the equity check still benefits from $3.4B of debt paydown. That's why the deal survives significant multiple compression (see Q2).
+
+**The intuition:** The cash sweep is the LBO equivalent of a mortgage paydown. You're not just hoping for appreciation (multiple expansion/EBITDA growth) — you're also building equity by reducing the mortgage (debt) every year.
+
+---
+
+## Q10: Why is DKS a good LBO candidate specifically? What makes a company LBO-able?
+
+Good LBO candidates share five characteristics. DKS hits all five:
+
+1. **Stable, predictable cash flows.** LBOs require high debt service from Day 1. DKS generated $1.475B of EBITDA in FY2024 with relatively low revenue volatility — sporting goods demand is non-cyclical at the entry-level (people still buy sneakers in recessions) and DKS has significant e-commerce resilience through the experiential format.
+
+2. **Low existing leverage.** At entry, DKS had minimal financial debt — a nearly unlevered balance sheet. That means the TLB isn't layering on top of existing debt obligations that would make coverage ratios uncomfortable.
+
+3. **Clear operational value creation thesis.** The best LBOs have a specific reason why the business will be worth more in 5 years. For DKS, it's private label mix shift and the House of Sport format expansion — both measurable, both trackable, and both independent of macro conditions.
+
+4. **Defensible market position.** Lenders want to be confident the business exists and is solvent in a downside scenario. As the last national big-box sporting goods retailer, DKS has a structural competitive moat that makes a catastrophic revenue decline unlikely.
+
+5. **Clear exit path.** At 9.0× entry, there's a credible path to exit — either a strategic acquirer (PE-to-strategic), an IPO (DKS is already public, so a re-IPO or secondary), or a sale to another sponsor at 10–11×. The exit multiple assumption (10.5×) reflects modest multiple expansion on a business that's delivered on its thesis, not a heroic re-rating.
+
+---
+
 *Built alongside DKS_LBO_Model.xlsx — Francisco Rodriguez, 2026*
