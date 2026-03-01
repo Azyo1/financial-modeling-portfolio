@@ -2,7 +2,7 @@
 
 **Francisco Rodriguez** — Dallas, TX | [LinkedIn](https://linkedin.com/in/francisco-rodriguez) | [GitHub](https://github.com/Azyo1)
 
-Buy-side and sell-side valuation models built to institutional standards. Each model includes a full Excel workbook, deal memorandum, and interview Q&A covering the 10 most common questions asked in finance interviews.
+Buy-side and sell-side valuation models built to institutional standards. Each model includes a full Excel workbook and deal memorandum.
 
 ---
 
@@ -20,7 +20,7 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 
 - **Color coding:** Blue cells = hardcoded inputs · Green cells = cross-sheet links · Black = formulas
 - **No circular references** — interest calculated on beginning-of-period balances
-- **Audit trail** — all assumptions documented on dedicated tab
+- **Audit train** — all assumptions documented on dedicated tab
 - **IB-style formatting** — headers, borders, and number formats match sell-side deliverable standards
 
 ---
