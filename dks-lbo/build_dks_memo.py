@@ -162,12 +162,12 @@ story.append(Paragraph(
     "We present a leveraged buyout of Dick's Sporting Goods, Inc. (DKS), the last major national "
     "big-box sporting goods retailer following the bankruptcies of Sports Authority (2016) and "
     "Modell's (2020). At an entry multiple of 9.0x LTM EBITDA, the transaction values DKS at a "
-    "$15.3B enterprise value, funded with $9.4B of Term Loan B debt (5.5x leverage) and $5.9B of "
+    "$16.8B enterprise value, funded with $10.3B of Term Loan B debt (5.5x leverage) and $6.6B of "
     "sponsor equity. The investment thesis centers on a private label mix shift that expands EBITDA "
-    "margins from 13.1% to 16.5% over a 5-year hold, supported by aggressive free cash flow sweeps "
-    "that deleverage the business from 5.5x at entry to approximately 2.4x at exit. At a 10.5x exit "
+    "margins from 13.9% to 16.5% over a 5-year hold, supported by aggressive free cash flow sweeps "
+    "that deleverage the business from 5.5x at entry to approximately 2.2x at exit. At a 10.5x exit "
     "multiple — justified by materially improved earnings quality — the transaction delivers a "
-    "<b>3.8x MOIC and 30.4% IRR</b> at Year 5.",
+    "<b>3.5x MOIC and 28.1% IRR</b> at Year 5.",
     body_style,
 ))
 
@@ -176,9 +176,9 @@ story += section("COMPANY OVERVIEW")
 
 overview_headers = ["Metric", "LTM Value"]
 overview_rows = [
-    ["Revenue",         "$13,000M"],
-    ["EBITDA",          "$1,700M"],
-    ["EBITDA Margin",   "13.1%"],
+    ["Revenue",         "$13,440M"],
+    ["EBITDA",          "$1,870M"],
+    ["EBITDA Margin",   "13.9%"],
     ["Stores",          "~850 locations"],
     ["Sector",          "Consumer Discretionary — Big-Box Sporting Goods"],
     ["HQ",              "Coraopolis, Pennsylvania"],
@@ -208,15 +208,15 @@ drivers = [
     ("Private Label Margin Expansion",
      "DSG and Alpine Design carry 500–800bps EBITDA margin premium versus national brands "
      "(Nike, Adidas, Under Armour). Growing private label penetration from ~15% toward 20%+ "
-     "of revenue mix is the primary operational thesis, driving ~350bps of margin expansion "
-     "across the hold period — from 13.1% at entry to 16.5% at exit."),
+     "of revenue mix is the primary operational thesis, driving ~260bps of margin expansion "
+     "across the hold period — from 13.9% at entry to 16.5% at exit."),
     ("Experiential Retail Differentiation",
      "The Dick's House of Sport flagship format — featuring climbing walls, batting cages, "
      "TrackMan golf simulators, and in-store services — drives materially higher average "
      "unit revenue and traffic that e-commerce competitors cannot replicate."),
     ("Cash Flow Deleveraging",
-     "Aggressive free cash flow sweeps against the Term Loan B generate $3.4B in cumulative "
-     "debt paydown across the hold period, reducing net debt from $9.4B to $5.5B. Compounding "
+     "Aggressive free cash flow sweeps against the Term Loan B generate $4.1B in cumulative "
+     "debt paydown across the hold period, reducing net debt from $10.3B to $6.2B. Compounding "
      "equity value creation through simultaneous EBITDA growth and debt reduction justifies "
      "the exit multiple re-rating to 10.5x."),
 ]
@@ -229,10 +229,10 @@ story += section("TRANSACTION STRUCTURE")
 
 su_headers = ["Sources", "$M", "  ", "Uses", "$M"]
 su_rows = [
-    ["Term Loan B (5.5x)",  "$9,350",  "  ", "Equity Purchase Price",  "$15,000"],
-    ["Revolver (drawn)",    "$0",      "  ", "Transaction Fees (2%)",  "$306"],
-    ["Sponsor Equity",      "$5,956",  "  ", "",                       ""],
-    ["Total Sources",       "$15,306", "  ", "Total Uses",             "$15,306"],
+    ["Term Loan B (5.5x)",  "$10,285", "  ", "Equity Purchase Price",  "$16,530"],
+    ["Revolver (drawn)",    "$0",      "  ", "Transaction Fees (2%)",  "$337"],
+    ["Sponsor Equity",      "$6,582",  "  ", "",                       ""],
+    ["Total Sources",       "$16,867", "  ", "Total Uses",             "$16,867"],
 ]
 t = Table(su_rows, colWidths=[W*0.26, W*0.12, W*0.04, W*0.40, W*0.18])
 t.setStyle(TableStyle([
@@ -254,8 +254,8 @@ story.append(gap(4))
 
 debt_headers = ["Debt Tranche", "Amount", "Rate", "Amortization", "Maturity"]
 debt_rows = [
-    ["Term Loan B",           "$9,350M", "SOFR + 350bps (8.0%)", "1% per annum",  "7 years"],
-    ["Revolving Credit Facility", "$750M capacity",  "SOFR + 275bps (7.25%)", "Bullet", "5 years"],
+    ["Term Loan B",           "$10,285M", "SOFR + 350bps (7.2%)", "1% per annum",  "7 years"],
+    ["Revolving Credit Facility", "$750M capacity",  "SOFR + 275bps (6.45%)", "Bullet", "5 years"],
 ]
 story.append(make_table(
     debt_headers, debt_rows,
@@ -268,16 +268,16 @@ story += section("FINANCIAL PROJECTIONS  ($M)")
 
 proj_headers = ["", "LTM", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5"]
 proj_rows = [
-    ["Revenue",        "$13,000", "$13,520", "$14,061", "$14,764", "$15,502", "$16,277"],
+    ["Revenue",        "$13,440", "$13,978", "$14,537", "$15,264", "$16,027", "$16,828"],
     ["  Growth %",     "—",       "4.0%",    "4.0%",    "5.0%",    "5.0%",    "5.0%"],
-    ["EBITDA",         "$1,700",  "$1,893",  "$2,109",  "$2,288",  "$2,480",  "$2,686"],
-    ["  Margin %",     "13.1%",   "14.0%",   "15.0%",   "15.5%",   "16.0%",   "16.5%"],
-    ["D&A",            "($351)",  "($365)",  "($380)",  "($399)",  "($419)",  "($440)"],
-    ["EBIT",           "$1,349",  "$1,528",  "$1,729",  "$1,889",  "$2,061",  "$2,246"],
-    ["Interest Exp.",  "—",       "($748)",  "($712)",  "($662)",  "($601)",  "($526)"],
-    ["Net Income",     "—",       "$585",    "$763",    "$920",    "$1,095",  "$1,289"],
-    ["Levered FCF",    "—",       "$355",    "$528",    "$672",    "$839",    "$1,025"],
-    ["TLB Balance",    "$9,350",  "$8,902",  "$8,281",  "$7,516",  "$6,584",  "$5,464"],
+    ["EBITDA",         "$1,870",  "$1,957",  "$2,181",  "$2,366",  "$2,564",  "$2,777"],
+    ["  Margin %",     "13.9%",   "14.0%",   "15.0%",   "15.5%",   "16.0%",   "16.5%"],
+    ["D&A",            "($363)",  "($377)",  "($392)",  "($412)",  "($433)",  "($454)"],
+    ["EBIT",           "$1,507",  "$1,580",  "$1,789",  "$1,954",  "$2,131",  "$2,323"],
+    ["Interest Exp.",  "—",       "($741)",  "($705)",  "($658)",  "($599)",  "($528)"],
+    ["Net Income",     "—",       "$629",    "$813",    "$972",    "$1,149",  "$1,346"],
+    ["Levered FCF",    "—",       "$384",    "$567",    "$727",    "$904",    "$1,102"],
+    ["TLB Balance",    "$10,285", "$9,798",  "$9,133",  "$8,315",  "$7,328",  "$6,153"],
 ]
 cw = [W*0.18] + [W*0.82/6]*6
 story.append(make_table(proj_headers, proj_rows, cw))
@@ -292,15 +292,15 @@ story += section("RETURNS ANALYSIS")
 
 ret_headers = ["", "Value"]
 ret_rows = [
-    ["Exit Year EBITDA",           "$2,686M"],
+    ["Exit Year EBITDA",           "$2,777M"],
     ["Exit EV / EBITDA Multiple",  "10.5x"],
-    ["Exit Enterprise Value",      "$28,203M"],
-    ["Less: Net Debt at Exit",     "($5,464M)"],
-    ["Less: Exit Fees (1%)",       "($282M)"],
-    ["Equity Proceeds to Sponsor", "$22,457M"],
-    ["Initial Equity Investment",  "$5,956M"],
-    ["MOIC",                       "3.8x"],
-    ["IRR (5-Year Hold)",          "30.4%"],
+    ["Exit Enterprise Value",      "$29,158M"],
+    ["Less: Net Debt at Exit",     "($6,153M)"],
+    ["Less: Exit Fees (1%)",       "($292M)"],
+    ["Equity Proceeds to Sponsor", "$22,713M"],
+    ["Initial Equity Investment",  "$6,582M"],
+    ["MOIC",                       "3.5x"],
+    ["IRR (5-Year Hold)",          "28.1%"],
 ]
 # Bold last 3 rows
 t_ret = Table([ret_headers] + ret_rows, colWidths=[W*0.60, W*0.40])
@@ -330,11 +330,11 @@ story += section("SENSITIVITY — IRR BY EXIT MULTIPLE SCENARIO")
 
 sens_headers = ["Scenario", "Exit Multiple", "Exit TEV", "Net Debt", "Equity Proceeds", "MOIC", "IRR"]
 sens_rows = [
-    ["Bull Case",        "11.0x", "$29,546M", "$5,464M", "$23,800M", "4.0x", "33.0%"],
-    ["Base Case ★",     "10.5x", "$28,203M", "$5,464M", "$22,457M", "3.8x", "30.4%"],
-    ["Conservative",     "9.0x",  "$24,174M", "$5,464M", "$18,428M", "3.1x", "25.2%"],
-    ["Downside",         "7.0x",  "$18,802M", "$5,464M", "$13,056M", "2.2x", "17.1%"],
-    ["Stress",           "6.0x",  "$16,116M", "$5,464M", "$10,370M", "1.7x", "11.7%"],
+    ["Bull Case",        "11.0x", "$30,547M", "$6,153M", "$24,089M", "3.7x", "29.6%"],
+    ["Base Case ★",     "10.5x", "$29,158M", "$6,153M", "$22,713M", "3.5x", "28.1%"],
+    ["Conservative",     "9.0x",  "$24,993M", "$6,153M", "$18,590M", "2.8x", "23.1%"],
+    ["Downside",         "7.0x",  "$19,439M", "$6,153M", "$13,092M", "2.0x", "14.7%"],
+    ["Stress",           "6.0x",  "$16,662M", "$6,153M", "$10,342M", "1.6x",  "9.5%"],
 ]
 story.append(make_table(
     sens_headers, sens_rows,
@@ -353,11 +353,11 @@ story += section("KEY RISKS & MITIGANTS")
 risks = [
     ("Private Label Thesis Failure",
      "If DSG / Alpine Design fail to gain traction and consumers remain loyal to national brands, "
-     "EBITDA margins remain flat at ~13%. At 9.0x / 9.0x with no margin expansion, IRR falls to "
-     "~21%. Mitigant: private label penetration is already tracking above 15% and accelerating; "
+     "EBITDA margins remain flat at ~14%. At 9.0x / 9.0x with no margin expansion, IRR falls to "
+     "~18%. Mitigant: private label penetration is already tracking above 15% and accelerating; "
      "DKS controls shelf space allocation."),
     ("Floating Rate Exposure",
-     "The $9.4B TLB is priced at SOFR + 350bps. A 150bps SOFR increase adds ~$141M of annual "
+     "The $10.3B TLB is priced at SOFR + 350bps. A 150bps SOFR increase adds ~$154M of annual "
      "interest, reducing free cash flow and slowing debt sweeps. Mitigant: strong FCF generation "
      "provides meaningful buffer; interest rate hedges are standard practice on large TLBs."),
     ("Consumer Discretionary Cycle",
@@ -381,7 +381,7 @@ story.append(Paragraph(
     "multiple of 9.0x LTM EBITDA. The transaction offers a differentiated thesis anchored in "
     "structural market consolidation and a clear operational playbook — private label margin "
     "expansion — that is already in motion. The deal generates meaningful returns across a wide "
-    "range of exit scenarios (17%+ IRR even at a 7.0x exit multiple), and the cash sweep "
+    "range of exit scenarios (~15% IRR even at a 7.0x exit multiple), and the cash sweep "
     "mechanism creates compounding equity value creation that is not dependent on financial "
     "engineering alone. We recommend authorization to proceed to exclusivity.",
     body_style,

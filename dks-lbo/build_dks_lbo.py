@@ -15,7 +15,7 @@ from openpyxl.styles.differential import DifferentialStyle
 from openpyxl.worksheet.views import SheetView
 import os
 
-OUTPUT_PATH = "/Users/paco/Downloads/DKS_LBO_Model.xlsx"
+OUTPUT_PATH = "/Users/paco/career/modeling-portfolio/dks-lbo/DKS_LBO_Model.xlsx"
 
 # ── Color constants ──────────────────────────────────────────────────────────
 BLUE_FILL      = "DBE5F1"   # input cells
@@ -161,8 +161,8 @@ def build_assumptions(ws):
     style_header_main(ws, 3, 1, "TRANSACTION ASSUMPTIONS", col_span=7)
 
     rows_ta = [
-        (4,  "LTM Revenue ($M)",                    13000,   None,         FMT_COMMA0),
-        (5,  "LTM EBITDA ($M)",                     1700,    None,         FMT_COMMA0),
+        (4,  "LTM Revenue ($M)",                    13440,   None,         FMT_COMMA0),
+        (5,  "LTM EBITDA ($M)",                     1870,    None,         FMT_COMMA0),
         (6,  "LTM EBITDA Margin",                   None,    "=B5/B4",     FMT_PCT1),
         (7,  "Entry EV / LTM EBITDA Multiple",      9.0,     None,         FMT_MULT),
         (8,  "Transaction Enterprise Value ($M)",   None,    "=B5*B7",     FMT_COMMA0),
@@ -213,7 +213,7 @@ def build_assumptions(ws):
     style_header_main(ws, 26, 1, "DEBT TERMS", col_span=7)
 
     rows_dt = [
-        (27, "Base Rate (SOFR)",                      0.045,   None,           FMT_PCT2),
+        (27, "Base Rate (SOFR)",                      0.037,   None,           FMT_PCT2),
         (28, "Term Loan B — Credit Spread",           0.035,   None,           FMT_PCT2),
         (29, "Term Loan B — All-In Interest Rate",    None,    "=B27+B28",     FMT_PCT2),
         (30, "Term Loan B — Annual Amortization (%)", 0.01,    None,           FMT_PCT1),

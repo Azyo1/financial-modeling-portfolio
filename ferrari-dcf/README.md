@@ -67,8 +67,6 @@ Ferrari_Valuation_Model.xlsx
 |------|-------------|
 | `Ferrari_Valuation_Model.xlsx` | Full Excel model — 5 tabs |
 | `Ferrari_DCF_Initiation_Note.pdf` | Sell-side initiation note |
-| `build_ferrari_dcf.py` | Python script that generates the Excel model |
-| `build_ferrari_memo.py` | Python script that generates the initiation note PDF |
 
 ---
 
