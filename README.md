@@ -13,6 +13,7 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 | [Dick's Sporting Goods LBO](./dks-lbo/) | Leveraged Buyout | 28.1% IRR / 3.5x MOIC | ✅ Complete |
 | [AMD — DCF & Initiation](./amd-dcf/) | Discounted Cash Flow | OVERWEIGHT $215 PT · +7.5% upside | ✅ Complete |
 | [Ferrari N.V. — Equity Research](./ferrari-dcf/) | DCF + Trading Comps (Blended) | OVERWEIGHT $450 PT · +19.8% upside | ✅ Complete |
+| [Nautilus Biotechnology — Initiation](./nautilus-dcf/) | DCF (Pre-Revenue Life Sci Tools) | OVERWEIGHT $5.00 PT · +88.7% upside | ✅ Complete |
 
 ---
 
