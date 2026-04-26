@@ -13,9 +13,9 @@
 Four value creation drivers:
 
 1. **QNX Is the Safety Layer for Physical AI** — QNX + NVIDIA IGX Thor is the reference architecture for every safety-certified edge AI deployment (humanoid robots, AMRs, surgical systems, industrial automation). QNX's IEC 61508 / ISO 26262 certifications are a 10-year structural moat. TAM expands from ~$19B automotive software to the full edge AI systems market as physical AI scales.
-2. **$950M Royalty Backlog = 2.5+ Years of Locked Revenue** — QNX earns a per-unit royalty for every OEM vehicle or device shipped. The $950M backlog is committed production volumes — already awarded, pending manufacturing. Q4 FY2026 QNX revenue hit $78.7M (+20% YoY, record quarter), running at $315M+ annualized. New design wins include Mercedes-Benz, BMW, Volvo, Leapmotor, and defense contractor TKMS.
-3. **Street Consensus Hasn't Repriced the NVIDIA Catalyst** — Consensus PT $4.84 implies ~5× enterprise revenue blended — reasonable for a mixed-segment company but wrong for QNX as a standalone asset. We assign QNX 8× FY2028E EV/Revenue ($2.97B segment EV) and CySec 3.5× FY2028E ($1.02B), yielding a $7.51 comps-implied PT vs. $6.11 DCF. Blended: $7.00.
-4. **FCF Inflection + Active Buyback = Institutional-Grade Downside Support** — FY2026A FCF of $46.5M (3× YoY growth), GAAP profitability ($53.2M net income), $432M net cash, and 15.5M shares repurchased since May 2025. FCF yield grows toward 3.5%+ by FY2028E. Profitability removes the last institutional ownership barrier.
+2. **$950M Royalty Backlog = 2.5+ Years of Locked Revenue** — QNX earns a per-unit royalty for every OEM vehicle or device shipped. The $950M backlog is committed production volumes — already awarded, pending manufacturing. Q4 FY2026 QNX revenue hit $78.7M (+20% YoY, record quarter). New design wins include Mercedes-Benz, BMW, Volvo, Leapmotor, and defense contractor TKMS.
+3. **Street Consensus Hasn't Repriced the NVIDIA Catalyst** — Consensus PT $4.84 implies ~5× blended enterprise revenue — reasonable for a mixed-segment company but wrong for QNX as a standalone asset. We assign QNX 8× FY2028E EV/Revenue ($2.97B segment EV) and CySec 3.5× FY2028E ($1.02B), yielding a $7.51 comps-implied PT vs. $6.11 DCF. Blended: $7.00.
+4. **FCF Inflection + Active Buyback = Institutional-Grade Downside Support** — FY2026A FCF of $46.5M (3× YoY growth), GAAP profitability ($53.2M net income), $432M net cash, and 15.5M shares repurchased since May 2025. FCF yield grows toward 3.5%+ by FY2028E, removing the last institutional ownership barrier.
 
 ---
 
@@ -23,15 +23,12 @@ Four value creation drivers:
 
 ```
 BB_DCF_Model.xlsx
-├── Cover          — Rating, PT, thesis, formula-linked stats from Assumptions & DCF
-├── Assumptions    — ALL inputs as blue cells; cross-sheet formula integrity preserved
-├── Operating Model — Two-segment P&L (QNX + CySec), EBITDA bridge, UFCF — all formulas
-├── DCF            — PV of FCFs, terminal value (EV/EBITDA exit), equity bridge, segment comps
-└── Sensitivity    — Live Excel formula matrices: WACC × Exit Multiple, WACC × QNX EV/Rev
+├── Cover          — Rating, PT, thesis, formula-linked stats
+├── Assumptions    — All hardcoded inputs (blue cells)
+├── Operating Model — Two-segment P&L (QNX + CySec), EBITDA bridge, UFCF
+├── DCF            — PV of FCFs, terminal value (16× FY2031E EBITDA), equity bridge, segment comps
+└── Sensitivity    — WACC × Exit Multiple matrix, WACC × QNX EV/Revenue matrix
 ```
-
-**Color coding:** Blue = hardcoded inputs (Assumptions only) · Green = cross-sheet links · Black = formulas
-**No hardcoded cells outside Assumptions** — all operating model, DCF, and sensitivity values are formula-driven
 
 ---
 
@@ -42,7 +39,7 @@ BB_DCF_Model.xlsx
 | FY2026A Total Revenue | $549.1M |
 | FY2026A QNX Revenue | $268.0M (+14% YoY) |
 | FY2026A CySec Revenue | $281.1M |
-| FY2026A Adj EBITDA | $107.1M (19.5% margin) |
+| FY2026A Adj. EBITDA | $107.1M (19.5% margin) |
 | FY2026A FCF | $46.5M (+3× YoY) |
 | FY2027E Revenue Guidance (Mgmt) | $584M–$611M |
 | QNX Revenue CAGR FY2026A–FY2031E | ~14.2% |
@@ -64,22 +61,12 @@ BB_DCF_Model.xlsx
 
 ---
 
-## Revenue Model
-
-| Segment | FY2026A | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E |
-|---------|---------|---------|---------|---------|---------|---------|
-| IoT / QNX | $268M | $316M | $371M | $427M | $477M | $521M |
-| Cybersecurity | $281M | $285M | $291M | $297M | $303M | $306M |
-| **Total** | **$549M** | **$601M** | **$662M** | **$724M** | **$780M** | **$827M** |
-
----
-
 ## Files
 
 | File | Description |
 |------|-------------|
-| `BB_DCF_Model.xlsx` | Full Excel model — 5 tabs, all formulas |
-| `BB_DCF_Initiation_Note.pdf` | 2-page sell-side initiation note |
+| `BB_DCF_Model.xlsx` | Full Excel model — 5 tabs |
+| `BB_DCF_Initiation_Note.pdf` | Sell-side initiation note |
 | `build_bb_dcf.py` | Python (openpyxl) script that generates the Excel workbook |
 | `build_bb_memo.py` | Python (reportlab) script that generates the PDF initiation note |
 
@@ -87,10 +74,11 @@ BB_DCF_Model.xlsx
 
 ## Methodology Notes
 
-- **Two-segment model:** QNX (high-growth embedded OS royalties, 14–18% CAGR) and Cybersecurity (stable government comms, 1–2% growth) modeled separately, priced at differentiated multiples
+- **Two-segment model:** QNX (high-growth embedded OS royalties, 14–18% CAGR) and Cybersecurity (stable government comms, 1–2% growth) modeled separately and priced at differentiated multiples
 - **Blended valuation:** 40% DCF / 60% segment comps — comps weighted higher given QNX's comparable-stage premium vs. pure-play software peers
-- **No hardcoded cells outside Assumptions:** All inputs live in the Assumptions tab as blue cells; Operating Model, DCF, and Sensitivity use Excel formula strings for full audit trail
-- **Live sensitivity:** Sensitivity matrices use actual Excel formulas referencing Operating Model and Assumptions — changes to any input automatically cascade through the full model
-- **WACC rationale:** β = 0.82 reflects royalty revenue stability (below software sector average of 1.1×); 9.0% WACC appropriate for a profitable, FCF-generating software company with $432M cash
+- **WACC rationale:** β = 0.82 reflects royalty revenue stability (below software sector avg of 1.1×); 9.0% appropriate for a profitable, FCF-generating company with $432M net cash
+- **All inputs in Assumptions tab:** Operating Model, DCF, and Sensitivity use Excel formula strings for full audit trail — no hardcoded values outside the Assumptions tab
+
+---
 
 *Model built to institutional standards. No circular references. Color-coded inputs (blue), cross-sheet links (green), and formulas (black) per sell-side convention.*
