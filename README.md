@@ -10,6 +10,7 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 
 | Model | Type | Highlights | Status |
 |-------|------|------------|--------|
+| [BlackBerry — DCF & Initiation](./bb-dcf/) | DCF + Segment Comps (Blended) | OVERWEIGHT $7.00 PT · +27.3% upside | ✅ Complete |
 | [Dick's Sporting Goods LBO](./dks-lbo/) | Leveraged Buyout | 28.1% IRR / 3.5x MOIC | ✅ Complete |
 | [AMD — DCF & Initiation](./amd-dcf/) | Discounted Cash Flow | OVERWEIGHT $215 PT · PT Exceeded ($348.84) | ✅ Complete |
 | [Ferrari N.V. — Equity Research](./ferrari-dcf/) | DCF + Trading Comps (Blended) | OVERWEIGHT $450 PT · +27.9% upside | ✅ Complete |
