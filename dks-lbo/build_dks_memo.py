@@ -152,7 +152,6 @@ story.append(HRFlowable(width="100%", thickness=4, color=NAVY, spaceAfter=8))
 
 # ── MEMO HEADER ───────────────────────────────────────────────────────────────
 header_data = [
-    ["TO:",   "Investment Committee"],
     ["FROM:", "Francisco Rodriguez, Financial Analyst"],
     ["DATE:", "February 2026"],
     ["RE:",   "Leveraged Buyout of Dick's Sporting Goods, Inc. (NYSE: DKS)"],
@@ -162,11 +161,6 @@ for label, value in header_data:
     style = re_style if label == "RE:" else memo_header_style
     story.append(Paragraph(row_text, style))
 
-story.append(gap(2))
-story.append(Paragraph(
-    "STRICTLY CONFIDENTIAL — FOR DISCUSSION PURPOSES ONLY",
-    confidential_style,
-))
 story.append(gap(4))
 story.append(HRFlowable(width="100%", thickness=0.75, color=NAVY, spaceAfter=8))
 
@@ -405,9 +399,8 @@ story.append(Paragraph(
 story.append(gap(6))
 story.append(HRFlowable(width="100%", thickness=0.5, color=LIGHT, spaceAfter=4))
 story.append(Paragraph(
-    "This memorandum is prepared for internal discussion purposes only. All projections are "
-    "illustrative and based on publicly available information. Past performance is not indicative "
-    "of future results.  |  Francisco Rodriguez  |  February 2026",
+    "All projections are illustrative and based on publicly available information. "
+    "Past performance is not indicative of future results.  |  Francisco Rodriguez  |  February 2026",
     footnote_style,
 ))
 
