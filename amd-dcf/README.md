@@ -1,17 +1,19 @@
 # Advanced Micro Devices — DCF Equity Research Initiation
 
 **Type:** Sell-side Equity Research / Discounted Cash Flow
-**Rating:** OVERWEIGHT | **Price Target:** $215 | **Current:** $200 | **Upside:** +7.5%
-**Thesis:** "AMD is the last credible challenger to Nvidia in AI silicon and the clear winner of Intel's CPU meltdown"
+**Rating:** OVERWEIGHT | **Price Target:** $215 | **Current:** $348.84 | **Upside:** -38.3% (PT Exceeded — stock has significantly outperformed)
+**Thesis:** "AMD is the last credible challenger to Nvidia in AI silicon and the clear winner of Intel's CPU meltdown — thesis has played out, stock has significantly outperformed the $215 PT"
 
 ---
 
 ## Investment Thesis
 
+**April 2026 Update:** The thesis has played out. AMD has run from ~$200 to ~$349 (+74%), exceeding the original $215 price target. Q1 2026 revenue was guided at ~$9.8B (+32% YoY), and management called for Data Center to grow 60%+ in FY2026 as the MI450 and Helios platform ramp begins in H2 2026. Q1 2026 earnings are scheduled for May 5, 2026.
+
 AMD reported a record FY2025 ($34.6B revenue, +34% YoY) driven by Data Center GPU and EPYC CPU momentum. Four catalysts underpin the thesis:
 
-1. **Data Center GPU Ramp** — MI300X / MI350 series positions AMD as the only credible alternative to Nvidia H100/B200. Enterprise buyers increasingly dual-source to reduce Nvidia dependency. Data Center grew 31.6% YoY in FY2025 to $16.6B.
-2. **CPU Market Share Gains** — Intel's manufacturing struggles have structurally shifted server CPU share to AMD EPYC. EPYC now runs in 4 of 5 top cloud hyperscalers. Client segment surged 51.9% YoY in FY2025 driven by AI PC demand.
+1. **Data Center GPU Ramp** — MI350 Series is now in active deployment; MI450 and the Helios multi-rack AI platform begin ramping in H2 2026. Q4 2025 Data Center revenue hit $5.4B (+39% YoY, +24% QoQ), a new record driven by Instinct GPU and EPYC momentum. Management guided Data Center revenue growth of 60%+ for FY2026. Enterprise dual-sourcing away from Nvidia dependency continues to accelerate.
+2. **CPU Market Share Gains** — Intel's structural struggles have continued to benefit EPYC. DA Davidson upgraded AMD to Buy (PT $375) following Intel's Q1 2026 results, noting a structural shift in AI workload CPU demand that favors AMD's architecture. EPYC now runs in 4 of 5 top cloud hyperscalers. Client segment surged 51.9% YoY in FY2025 driven by AI PC demand.
 3. **Operating Leverage** — AMD's fabless model means incremental Data Center revenue drops at 65–70% gross margins. As Xilinx amortization rolls off (~$2.6B/yr declining to ~$2.1B by FY2029), GAAP EBIT will reconnect with cash earnings.
 4. **Xilinx Embedded Recovery** — Embedded stabilized at $3.5B in FY2025 (flat YoY) after a severe inventory correction. Recovery to 10–15% annual growth expected through FY2029 as aerospace, automotive, and industrial customers resume design-in cycles.
 

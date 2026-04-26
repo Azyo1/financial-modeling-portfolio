@@ -3,16 +3,18 @@
 **Type:** Discounted Cash Flow (Pre-Revenue Biotech / Life Science Tools)
 **Rating:** OVERWEIGHT
 **Price Target:** $5.00
-**Current Price:** ~$2.65 (March 2026)
-**Upside:** +88.7%
+**Current Price:** ~$2.97 (April 2026)
+**Upside:** +68.4%
 
 ---
 
 ## Thesis
 
-Nautilus Biotechnology (NASDAQ: NAUT) is developing **Voyager**, a single-molecule proteomics platform that quantifies 10 billion intact proteins simultaneously with 1.5% coefficient of variation — roughly 27× more reproducible than legacy mass spectrometry. The first commercial assay (Tau Proteoforms, targeting Alzheimer's biomarker research) launched in January 2026; Baylor College of Medicine became the first paying Early Access customer in March 2026. Full commercial launch is targeted for late 2026.
+Nautilus Biotechnology (NASDAQ: NAUT) is developing **Voyager**, a single-molecule proteomics platform that quantifies 10 billion intact proteins simultaneously with 1.5% coefficient of variation — roughly 27× more reproducible than legacy mass spectrometry. The first commercial assay (Tau Proteoforms, targeting Alzheimer's biomarker research) launched in January 2026; Baylor College of Medicine became the first paying Early Access customer in March 2026.
 
-At ~$2.65/share, the stock trades at an enterprise value of ~$191M — pricing near-total failure into a platform at the moment of commercial inflection. The $156M net cash balance ($1.23/share) provides 46% downside support. Our base case DCF yields a $5.00 blended price target.
+**April 2026 Update:** Voyager was publicly debuted at US HUPO on February 24, 2026, where the first field evaluation unit (installed at the Buck Institute for Research on Aging) demonstrated highly reproducible insights into tau proteoform biology — a key technical de-risking event. Commercial launch timeline: Voyager pre-orders open in **late 2026**, with instrument installations beginning in **early 2027** (slight timeline refinement vs. original full-launch estimate). Nautilus also hired Amber Faust as VP of Sales in April 2026, building out the commercialization team ahead of launch. The thesis remains intact.
+
+At ~$2.97/share, the stock trades at an enterprise value of ~$220M — still pricing near-total failure into a platform executing on its commercialization milestones. The $156M net cash balance ($1.23/share) provides ~41% downside support. Our base case DCF yields a $5.00 blended price target.
 
 ---
 
