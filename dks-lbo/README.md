@@ -69,8 +69,6 @@ DKS_LBO_Model.xlsx
 |------|-------------|
 | `DKS_LBO_Model.xlsx` | Full Excel model — 6 tabs |
 | `DKS_LBO_Deal_Memo.pdf` | 2-page investment memorandum |
-| `build_dks_lbo.py` | Python script that generates the Excel model |
-| `build_dks_memo.py` | Python script that generates the deal memo PDF |
 
 ---
 

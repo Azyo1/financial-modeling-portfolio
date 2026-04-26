@@ -67,8 +67,6 @@ BB_DCF_Model.xlsx
 |------|-------------|
 | `BB_DCF_Model.xlsx` | Full Excel model — 5 tabs |
 | `BB_DCF_Initiation_Note.pdf` | Sell-side initiation note |
-| `build_bb_dcf.py` | Python (openpyxl) script that generates the Excel workbook |
-| `build_bb_memo.py` | Python (reportlab) script that generates the PDF initiation note |
 
 ---
 

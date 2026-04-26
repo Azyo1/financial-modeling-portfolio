@@ -69,8 +69,6 @@ NAUT_DCF_Model.xlsx
 |------|-------------|
 | `NAUT_DCF_Model.xlsx` | Full 5-tab Excel DCF model (Cover, Assumptions, Operating Model, DCF, Sensitivity) |
 | `NAUT_DCF_Initiation_Note.pdf` | 2-page equity research initiation note with thesis, projections, valuation, risks |
-| `build_naut_dcf.py` | Python (openpyxl) script that generates the Excel workbook |
-| `build_naut_memo.py` | Python (reportlab) script that generates the PDF initiation note |
 
 ---
 
