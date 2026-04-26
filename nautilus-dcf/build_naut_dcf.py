@@ -114,6 +114,15 @@ def no_gridlines(ws):
 def set_col_width(ws, col, width):
     ws.column_dimensions[get_column_letter(col)].width = width
 
+def add_brand_footer(ws, max_col=12):
+    r = ws.max_row + 2
+    ws.row_dimensions[r].height = 12
+    ws.merge_cells(start_row=r, start_column=2, end_row=r, end_column=max_col)
+    c = ws.cell(row=r, column=2,
+                value="Francisco Rodriguez  |  Financial Modeling Portfolio  |  github.com/Azyo1")
+    c.font = _font("9E9E9E", italic=True, size=7.5)
+    c.alignment = _align("left")
+
 # Years: columns C-L = 2026-2035 (cols 3-12)
 YEARS = list(range(2026, 2036))
 DATA_COLS = list(range(3, 13))  # columns 3-12
@@ -249,6 +258,7 @@ def build_cover(ws):
                 value="Francisco Rodriguez  |  March 2026  |  All figures in USD unless noted")
     c.font = _font("767676", italic=True, size=8)
     ws.merge_cells(start_row=row, start_column=2, end_row=row, end_column=7)
+    add_brand_footer(ws, max_col=7)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -385,6 +395,7 @@ def build_assumptions(ws):
         c = ws.cell(row=i, column=4, value=note)
         c.font = _font("444444", size=9)
         c.alignment = _align("left")
+    add_brand_footer(ws, max_col=4)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -543,6 +554,7 @@ def build_operating_model(ws):
 
     # Freeze panes
     ws.freeze_panes = "C3"
+    add_brand_footer(ws)
 
     # Store UFCF for DCF sheet
     ws._naut_ufcf = ufcf_vals
@@ -690,6 +702,7 @@ def build_dcf(ws, ufcf_vals, rev_vals):
                 c.fill = _fill(GREEN_FILL if val > 0 else "FCE4D6")
 
     ws.freeze_panes = "C3"
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -848,6 +861,7 @@ def build_sensitivity(ws):
         ws.row_dimensions[ri2].height = 16
 
     ws.freeze_panes = "C4"
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════

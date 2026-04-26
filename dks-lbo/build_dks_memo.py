@@ -20,9 +20,23 @@ doc = SimpleDocTemplate(
     pagesize=LETTER,
     leftMargin=0.80 * inch,
     rightMargin=0.80 * inch,
-    topMargin=0.60 * inch,
+    topMargin=0.75 * inch,
     bottomMargin=0.60 * inch,
 )
+
+def add_page_header(canvas, doc):
+    canvas.saveState()
+    canvas.setFont("Helvetica", 7)
+    canvas.setFillColor(colors.HexColor("#9E9E9E"))
+    canvas.drawString(0.80 * inch, LETTER[1] - 0.42 * inch,
+                      "Francisco Rodriguez  |  Financial Modeling Portfolio")
+    canvas.drawRightString(LETTER[0] - 0.80 * inch, LETTER[1] - 0.42 * inch,
+                           "DKS — LBO Deal Memorandum")
+    canvas.setStrokeColor(colors.HexColor("#DDDDDD"))
+    canvas.setLineWidth(0.3)
+    canvas.line(0.80 * inch, LETTER[1] - 0.47 * inch,
+                LETTER[0] - 0.80 * inch, LETTER[1] - 0.47 * inch)
+    canvas.restoreState()
 
 W = LETTER[0] - 1.60 * inch
 
@@ -398,5 +412,5 @@ story.append(Paragraph(
 ))
 
 # ── BUILD ─────────────────────────────────────────────────────────────────────
-doc.build(story)
+doc.build(story, onFirstPage=add_page_header, onLaterPages=add_page_header)
 print(f"✓  Deal memo saved → {OUTPUT}")

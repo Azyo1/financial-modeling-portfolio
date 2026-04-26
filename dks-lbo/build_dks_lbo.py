@@ -144,6 +144,15 @@ def set_col_width(ws, col, width):
 def freeze(ws, cell_ref):
     ws.freeze_panes = cell_ref
 
+def add_brand_footer(ws, max_col=7):
+    r = ws.max_row + 2
+    ws.row_dimensions[r].height = 12
+    ws.merge_cells(start_row=r, start_column=2, end_row=r, end_column=max_col)
+    c = ws.cell(row=r, column=2,
+                value="Francisco Rodriguez  |  Financial Modeling Portfolio  |  github.com/Azyo1")
+    c.font = _font("9E9E9E", italic=True, size=7.5)
+    c.alignment = _align("left")
+
 
 # ════════════════════════════════════════════════════════════════════════════
 # ASSUMPTIONS SHEET
@@ -267,6 +276,7 @@ def build_assumptions(ws):
 
     style_label(ws, 46, 1, "Exit Transaction Fees (% of TEV)", indent=1)
     style_input(ws, 46, 2, 0.01, fmt=FMT_PCT1)
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -501,6 +511,7 @@ def build_operating_model(ws):
         lc = col_letters[i+1]
         formula = f"={lc}28+{lc}30+{lc}31"
         style_total(ws, 32, col, formula, fmt=FMT_COMMA0)
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -656,6 +667,7 @@ def build_debt_schedule(ws):
         # EBITDA for that year from Operating Model
         formula = f"={lc}21/'Operating Model'!{lc}8"
         style_formula(ws, 23, col, formula, fmt=FMT_MULT)
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -715,6 +727,7 @@ def build_returns(ws):
 
     style_label(ws, 18, 1, "Cash-on-Cash Return (MOIC)", indent=1)
     style_formula(ws, 18, 2, "=B15", fmt='0.0"x"')
+    add_brand_footer(ws, max_col=3)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -808,6 +821,7 @@ def build_sensitivity(ws):
         c = ws.cell(row=start_row+8, column=1,
                     value=f"Rows = Entry EV/EBITDA Multiple | Columns = Exit EV/EBITDA Multiple")
         c.font = _font("7F7F7F", italic=True, size=9)
+    add_brand_footer(ws)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -955,6 +969,7 @@ def build_cover(ws):
                 value="STRICTLY CONFIDENTIAL \u2014 FOR DISCUSSION PURPOSES ONLY")
     c.font = Font(name="Calibri", size=8.5, italic=True, color="9E9E9E")
     c.alignment = _align("center")
+    add_brand_footer(ws, max_col=6)
 
 
 # ════════════════════════════════════════════════════════════════════════════
