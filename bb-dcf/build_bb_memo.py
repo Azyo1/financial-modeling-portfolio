@@ -135,8 +135,7 @@ story = []
 story.append(HRFlowable(width="100%", thickness=4, color=NAVY, spaceAfter=8))
 
 header_data = [
-    ["TO:",   "Investment Committee"],
-    ["FROM:", "Francisco Rodriguez, Financial Analyst"],
+    ["FROM:", "Francisco Rodriguez"],
     ["DATE:", "April 2026"],
     ["RE:",   "Initiation of Coverage — BlackBerry Limited (NYSE: BB) | OVERWEIGHT | PT: $7.00"],
 ]
@@ -145,8 +144,6 @@ for label, value in header_data:
     style = re_style if label == "RE:" else memo_header_style
     story.append(Paragraph(row_text, style))
 
-story.append(gap(2))
-story.append(Paragraph("STRICTLY CONFIDENTIAL — FOR DISCUSSION PURPOSES ONLY", confidential_style))
 story.append(gap(4))
 story.append(HRFlowable(width="100%", thickness=0.75, color=NAVY, spaceAfter=8))
 
