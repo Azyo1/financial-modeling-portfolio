@@ -1,21 +1,21 @@
-# Advanced Micro Devices — DCF Equity Research Initiation
+# Advanced Micro Devices — DCF Equity Research (Coverage Update)
 
 **Type:** Sell-side Equity Research / Discounted Cash Flow
-**Rating:** OVERWEIGHT | **Price Target:** $215 | **Current:** $348.84 | **Upside:** -38.3% (PT Exceeded — stock has significantly outperformed)
-**Thesis:** "AMD is the last credible challenger to Nvidia in AI silicon and the clear winner of Intel's CPU meltdown — thesis has played out, stock has significantly outperformed the $215 PT"
+**Rating:** UNDERWEIGHT | **Price Target:** $405 | **Current:** $570.82 (Oct 14, 2026) | **Upside:** -29.0%
+**Thesis:** "The Thesis Played Out — Now the Price Has Run Past the Cash Flows"
 
 ---
 
 ## Investment Thesis
 
-**April 2026 Update:** The thesis has played out. AMD has run from ~$200 to ~$349 (+74%), exceeding the original $215 price target. Q1 2026 revenue was guided at ~$9.8B (+32% YoY), and management called for Data Center to grow 60%+ in FY2026 as the MI450 and Helios platform ramp begins in H2 2026. Q1 2026 earnings are scheduled for May 5, 2026.
+**October 2026 Update:** We initiated in February 2026 on the AI data center ramp and the business has delivered: FY2025A revenue grew 34% to $34.6B, Q2 2026 revenue hit a record $11.5B (+50% YoY) and Data Center revenue more than doubled to $6.7B. The stock has moved further and faster, to ~$950B of market value (~48x our FY2027E EBITDA).
 
-AMD reported a record FY2025 ($34.6B revenue, +34% YoY) driven by Data Center GPU and EPYC CPU momentum. Four catalysts underpin the thesis:
+We rebuilt the model on current data: FY2025A segment actuals, Q1/Q2 2026 results, the ~$13.0B Q3 2026 guide, the Jun 27, 2026 balance sheet, and a **10-year forecast that fades growth to the terminal rate** rather than cutting off a 20%+ grower after five years.
 
-1. **Data Center GPU Ramp** — MI350 Series is now in active deployment; MI450 and the Helios multi-rack AI platform begin ramping in H2 2026. Q4 2025 Data Center revenue hit $5.4B (+39% YoY, +24% QoQ), a new record driven by Instinct GPU and EPYC momentum. Management guided Data Center revenue growth of 60%+ for FY2026. Enterprise dual-sourcing away from Nvidia dependency continues to accelerate.
-2. **CPU Market Share Gains** — Intel's structural struggles have continued to benefit EPYC. DA Davidson upgraded AMD to Buy (PT $375) following Intel's Q1 2026 results, noting a structural shift in AI workload CPU demand that favors AMD's architecture. EPYC now runs in 4 of 5 top cloud hyperscalers. Client segment surged 51.9% YoY in FY2025 driven by AI PC demand.
-3. **Operating Leverage** — AMD's fabless model means incremental Data Center revenue drops at 65–70% gross margins. As Xilinx amortization rolls off (~$2.6B/yr declining to ~$2.1B by FY2029), GAAP EBIT will reconnect with cash earnings.
-4. **Xilinx Embedded Recovery** — Embedded stabilized at $3.5B in FY2025 (flat YoY) after a severe inventory correction. Recovery to 10–15% annual growth expected through FY2029 as aerospace, automotive, and industrial customers resume design-in cycles.
+1. **Data Center Is Now the Business** — Q2 2026 Data Center revenue was $6.7B (+107% YoY), 58% of revenue. MI450 and the Helios rack-scale platform ramp in H2 2026 alongside the first gigawatt of the OpenAI agreement. We model 75% Data Center growth in FY2026E and 60% in FY2027E.
+2. **The Current Price Needs the Bull Case** — Our base case compounds Data Center revenue at ~46% a year through FY2030E (below the >60% Analyst Day target) and is worth $343/share. Only the Bull case ($625) and the DC Super Bull scenario ($684) clear today's price.
+3. **Margins Are Expanding** — GAAP gross margin reached 54% in Q2 2026 (40% a year earlier). We treat SBC as a real cost and model EBITDA margin rising from 20.3% (FY2025A) to 35.0% (FY2030E).
+4. **What Would Change Our View** — Evidence Data Center can compound above ~55% through FY2030E, a lower cost of capital, or a pullback toward our probability-weighted value.
 
 ---
 
@@ -23,11 +23,11 @@ AMD reported a record FY2025 ($34.6B revenue, +34% YoY) driven by Data Center GP
 
 ```
 AMD_DCF_Model.xlsx
-├── Cover          — Rating, PT, key stats, investment thesis
-├── Assumptions    — Segment revenue growth rates, margins, D&A by year
-├── Income Statement — FY2022A–FY2029E P&L and unlevered FCF build
-├── DCF            — WACC build, PV of FCFs, terminal value, equity bridge
-└── Sensitivity    — WACC × TGR matrix, bull/base/bear scenarios
+├── Cover            — Rating, PT, key stats, thesis (every number formula-linked)
+├── Assumptions      — ALL inputs (blue): segment growth FY2026E–FY2035E, margins, capex, WACC, balance sheet, scenarios
+├── Income Statement — FY2022A–FY2035E P&L and unlevered FCF build
+├── DCF              — WACC build, stub-period + mid-year discounting, terminal value, equity bridge, PT & rating
+└── Sensitivity      — WACC × g grid, Bear/Base/Bull, Data Center scenarios → probability-weighted PT (live re-projection engine)
 ```
 
 ---
@@ -36,40 +36,35 @@ AMD_DCF_Model.xlsx
 
 | Metric | Value |
 |--------|-------|
-| FY2025A Revenue | $34.6B |
-| FY2025A EBITDA | $8.5B (Adj.) / $7.0B (GAAP) |
-| FY2025A EBITDA Margin | ~24.6% (Adj.) |
-| Revenue CAGR FY2025–FY2029E | ~16% |
-| Exit EBITDA Margin (FY2029E) | 29.0% |
-| Base WACC | ~10.3% |
-| Terminal Growth Rate | 3.5% |
-| Shares Outstanding | 1,620M |
-| Net Cash | ~$4.0B |
+| FY2025A Revenue | $34.6B (+34% YoY) |
+| FY2025A EBITDA (GAAP) | $7.0B (20.3% margin) |
+| FY2026E Revenue | $48.6B |
+| Revenue CAGR FY2025A–FY2030E | 31.7% |
+| FY2030E EBITDA Margin | 35.0% |
+| WACC | 11.1% (Rf 5.1%, β 1.40, ERP 4.3%) |
+| Terminal Growth Rate | 3.5% (TV = 63% of EV, 10.6x terminal EBITDA) |
+| Cash / Debt (Jun 27, 2026) | $13.1B / $3.2B |
+| Diluted Shares | 1,667M (OpenAI warrant excluded) |
 
 ---
 
 ## Valuation Summary
 
-| Scenario | WACC | TGR | Implied Price |
-|----------|------|-----|---------------|
-| Bear | 10.5% | 3.0% | ~$112 |
-| Base | 9.0% | 3.5% | ~$143 |
-| Bull | 8.5% | 4.0% | ~$173 |
-| **Price Target** | — | — | **$215** |
+| Scenario | Value / Share | vs. $570.82 |
+|----------|---------------|-------------|
+| Bear (−10pp growth, −5pp margin, +1pp WACC, g 3.0%) | $128 | -77.6% |
+| **Base DCF** | **$343** | **-39.9%** |
+| Bull (+6pp growth, +3pp margin, −0.5pp WACC, g 4.0%) | $625 | +9.6% |
+| DC Downside / Base / Bull / Super Bull (20/40/30/10%) | $265 / $343 / $488 / $684 | — |
+| **Price Target (probability-weighted, rounded)** | **$405** | **-29.0%** |
 
-Price target reflects probability-weighted scenario analysis with upside weighting toward Data Center GPU outperformance.
+Rating rule (formula): Overweight if PT upside ≥ +10%, Underweight if ≤ −10%, otherwise Equal-Weight.
 
 ---
 
-## FY2025A Segment Actuals
+## Revision Log
 
-| Segment | FY2025A Revenue | YoY Growth |
-|---------|----------------|------------|
-| Data Center | $16,635M | +31.6% |
-| Client | $10,640M | +51.9% |
-| Gaming | $3,910M | +53.3% |
-| Embedded | $3,454M | -3.8% |
-| **Total** | **$34,639M** | **+34.3%** |
+- **Oct 2026:** Fixed a rating/model mismatch — the published $215 Overweight was never supported by the workbook (the DCF computed $113). Rebuilt on FY2025A actuals and 2026 data; removed the already-reported FY2025 cash flow from the discounted period; replaced hardcoded sensitivity and scenario tables with live formulas; moved every input to the Assumptions tab; corrected cash/debt/shares to the latest balance sheet.
 
 ---
 
@@ -77,8 +72,10 @@ Price target reflects probability-weighted scenario analysis with upside weighti
 
 | File | Description |
 |------|-------------|
-| `AMD_DCF_Model.xlsx` | Full Excel model — 5 tabs |
-| `AMD_DCF_Initiation_Note.pdf` | Sell-side initiation note |
+| `AMD_DCF_Model.xlsx` | Full Excel model — 5 tabs, all outputs formula-driven |
+| `AMD_DCF_Initiation_Note.pdf` | Coverage update note (every figure read from the model) |
+
+Sources: AMD 10-K FY2022–FY2025, Q4 2025 / Q1 2026 / Q2 2026 earnings releases, Q3 2026 outlook, Nov 11 2025 Financial Analyst Day.
 
 ---
 

@@ -2,9 +2,9 @@
 
 **Type:** Discounted Cash Flow (Pre-Revenue Biotech / Life Science Tools)
 **Rating:** OVERWEIGHT
-**Price Target:** $5.00
+**Price Target:** $6.00
 **Current Price:** ~$2.97 (April 2026)
-**Upside:** +68.4%
+**Upside:** +102.0%
 
 ---
 
@@ -14,7 +14,7 @@ Nautilus Biotechnology (NASDAQ: NAUT) is developing **Voyager**, a single-molecu
 
 **April 2026 Update:** Voyager was publicly debuted at US HUPO on February 24, 2026, where the first field evaluation unit (installed at the Buck Institute for Research on Aging) demonstrated highly reproducible insights into tau proteoform biology — a key technical de-risking event. Commercial launch timeline: Voyager pre-orders open in **late 2026**, with instrument installations beginning in **early 2027** (slight timeline refinement vs. original full-launch estimate). Nautilus also hired Amber Faust as VP of Sales in April 2026, building out the commercialization team ahead of launch. The thesis remains intact.
 
-At ~$2.97/share, the stock trades at an enterprise value of ~$220M — still pricing near-total failure into a platform executing on its commercialization milestones. The $156M net cash balance ($1.23/share) provides ~41% downside support. Our base case DCF yields a $5.00 blended price target.
+At ~$2.97/share, the stock trades at an enterprise value of ~$220M — still pricing near-total failure into a platform executing on its commercialization milestones. The $156M net cash balance ($1.23/share) provides ~41% downside support. Our base case DCF yields $4.91/share; probability-weighting bull/base/bear (25/55/20) gives a $6.00 price target. The key risk is funding: Nautilus needs ~$300M of new equity before FCF turns positive.
 
 ---
 
@@ -24,13 +24,13 @@ At ~$2.97/share, the stock trades at an enterprise value of ~$220M — still pri
 NAUT_DCF_Model.xlsx
 ├── Cover            — Rating, PT, company snapshot, thesis, valuation summary
 ├── Assumptions      — All hardcoded inputs (blue cells): revenue ramp, gross margin,
-│                      R&D/G&A by year, WACC components, terminal value inputs, balance sheet
+│                      R&D/G&A/capex/ΔNWC by year, WACC components, balance sheet, scenarios
 ├── Operating Model  — FY2026E–FY2035E P&L: revenue, gross profit, opex, EBIT, NOPAT,
 │                      unlevered FCF bridge (NOPAT + D&A – capex – ΔNWC)
 ├── DCF              — WACC build, PV of FCFs, terminal value (EV/Revenue method),
-│                      equity bridge (EV + net cash → intrinsic value per share)
-└── Sensitivity      — WACC × Terminal EV/Revenue matrix, WACC × Terminal Revenue matrix,
-                       bull / base / bear scenario summary
+│                      equity bridge, PT & rating, funding-gap / dilution disclosure
+└── Sensitivity      — WACC × EV/Revenue and WACC × terminal revenue grids, bull / base / bear
+                       re-projection engine (all live formulas)
 ```
 
 ---
@@ -39,9 +39,9 @@ NAUT_DCF_Model.xlsx
 
 | Input | Value | Rationale |
 |-------|-------|-----------|
-| WACC (Base) | 20.0% | Pre-revenue micro-cap; CAPM + 5% size/illiquidity premium |
-| WACC (Bull) | 17.0% | De-risked post commercial launch |
-| WACC (Bear) | 20.0% | Bear uses revenue haircut vs. WACC increase |
+| WACC (Base) | 19.4% | Pre-revenue micro-cap; 4.5% + 1.8 × 5.5% + 5.0% size/illiquidity premium (formula) |
+| WACC (Bull) | 16.4% | Base − 3pp: de-risked post commercial launch |
+| WACC (Bear) | 19.4% | Bear uses revenue haircut vs. WACC increase |
 | Terminal EV/Revenue | 8.0x (base) | Discount to Illumina's comparable-stage 12x; consistent with Bruker/Waters |
 | Terminal Revenue (2035E) | $490M | ~310 installed instruments; consumables ~55% of revenue |
 | Projection Period | 10 years (2026–2035) | Standard for pre-revenue platform company |
@@ -54,13 +54,14 @@ NAUT_DCF_Model.xlsx
 
 ## Valuation Summary
 
-| Scenario | WACC | Term. Revenue | EV/Revenue | Price Target | Upside |
-|----------|------|--------------|------------|-------------|--------|
-| Bull Case | 17.0% | $700M | 10.0x | $7.65 | +189% |
-| **Base Case ★** | **20.0%** | **$490M** | **8.0x** | **$4.81** | **+81%** |
-| Bear Case | 20.0% | $200M | 6.0x | $1.55 | -41% |
-| **Blended PT (55/25/20)** | — | — | — | **$5.00** | **+89%** |
+| Scenario | WACC | Term. Revenue | EV/Revenue | Value / Share | Upside | Weight |
+|----------|------|--------------|------------|---------------|--------|--------|
+| Bull Case | 16.4% | $700M | 10.0x | $12.69 | +327% | 25% |
+| **Base Case ★** | **19.4%** | **$490M** | **8.0x** | **$4.91** | **+65%** | **55%** |
+| Bear Case | 19.4% | $200M | 6.0x | $0.10 | -97% | 20% |
+| **Price Target (probability-weighted $5.89, rounded)** | — | — | — | **$6.00** | **+102%** | — |
 
+Funding gap: ~$300M of equity is needed (holding a $30M cash buffer) before FCF turns positive. Raised at $2.97, that would add ~101M shares and cut the base-case value to **$4.05/share** — disclosed on the DCF tab; the PT is struck on today's share count.
 ---
 
 ## Files
@@ -74,7 +75,11 @@ NAUT_DCF_Model.xlsx
 
 ## Methodology Notes
 
-- **Pre-revenue DCF approach:** Negative FCFs for FY2026–FY2031E are discounted at a high WACC (20%) to reflect development-stage execution risk. The terminal value is computed using an EV/Revenue multiple (rather than a growth-in-perpetuity method) consistent with how life science tools comps are traded.
-- **Net cash treatment:** The $156.1M liquid balance is added to enterprise value at the equity bridge — it offsets near-term negative FCFs and provides a floor. Future dilutive equity raises are not modeled explicitly (noted as a risk).
+- **Pre-revenue DCF approach:** Negative FCFs for FY2026–FY2031E are discounted at a high cost of equity (19.4%) to reflect development-stage execution risk. The terminal value is computed using an EV/Revenue multiple (rather than a growth-in-perpetuity method) consistent with how life science tools comps are traded.
+- **Net cash treatment:** The $156.1M liquid balance is added to enterprise value at the equity bridge. Because cumulative burn exceeds it, the DCF tab computes the funding gap and a dilution-adjusted value per share.
 - **Razor / blade gross margin ramp:** Gross margins expand from 50% at commercial launch (instrument-heavy) to 65% by 2032+ as consumables (high-margin, recurring) become the revenue majority — consistent with Illumina and 10x Genomics at equivalent stages.
-- **WACC:** 20% base reflects: 4.5% risk-free rate + 1.8 beta × 5.5% ERP + 5.0% size/illiquidity premium for a pre-revenue micro-cap with no debt in the capital structure.
+- **WACC:** 19.4% base = 4.5% risk-free rate + 1.8 beta × 5.5% ERP + 5.0% size/illiquidity premium for a pre-revenue micro-cap with no debt in the capital structure (previously hardcoded as 20%).
+
+## Revision Log
+
+- **Oct 2026:** The workbook was entirely pasted values; it is now fully formula-driven from the Assumptions tab. Fixed: the DCF used UFCFs that did not match the operating model (e.g. 2026E −$84.7M vs −$89.7M); WACC typed as 20% vs 19.4% from its own inputs; current price $2.65 in the model vs $2.97 here; bull/bear values that differed between the cover, README and sensitivity tab; and a blended-PT calculation that did not add up. Added the funding-gap / dilution disclosure.

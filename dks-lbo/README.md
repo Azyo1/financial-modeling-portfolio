@@ -2,7 +2,7 @@
 
 **Type:** Buy-side LBO Model
 **Entry:** 9.0x LTM EBITDA | **Exit:** 10.5x LTM EBITDA (Year 5)
-**Returns:** 28.1% IRR / 3.5x MOIC
+**Returns:** 27.0% IRR / 3.3x MOIC
 **Leverage:** 5.5x Total Debt / EBITDA at entry
 
 ---
@@ -25,9 +25,9 @@ DKS_LBO_Model.xlsx
 ├── Cover          — Deal summary, stats grid, investment thesis
 ├── Assumptions    — All hardcoded inputs (blue cells)
 ├── Operating Model — 5-year P&L, FCF build
-├── Debt Schedule  — TLB amortization, cash sweep, revolver
+├── Debt Schedule  — TLB amortization, cash sweep, revolver, excess-cash build, net debt
 ├── Returns        — IRR / MOIC, equity bridge
-└── Sensitivity    — Returns by entry/exit multiple matrix
+└── Sensitivity    — IRR & MOIC by entry/exit multiple (live, centred on base case)
 ```
 
 ---
@@ -40,7 +40,8 @@ DKS_LBO_Model.xlsx
 | LTM EBITDA | $1,870M |
 | Entry Multiple | 9.0x EBITDA |
 | Transaction Enterprise Value | $16,830M |
-| Sponsor Equity Check | $6,582M |
+| Total Uses (incl. $300M net debt refinanced + fees) | $17,167M |
+| Sponsor Equity Check | $6,882M |
 | Term Loan B | $10,285M (5.5x) |
 | TLB Rate | SOFR + 350bps (7.2%) |
 | Revenue CAGR | ~4.6% |
@@ -55,11 +56,16 @@ DKS_LBO_Model.xlsx
 | Metric | Value |
 |--------|-------|
 | Exit EBITDA (Year 5) | $2,777M |
-| Exit TEV | $29,158M |
-| Net Debt at Exit | $6,153M |
-| Equity Proceeds | $22,713M |
-| MOIC | **3.5x** |
-| IRR | **28.1%** |
+| Exit TEV | $29,155M |
+| Net Debt at Exit | $6,170M |
+| Equity Proceeds | $22,693M |
+| MOIC | **3.3x** |
+| IRR | **27.0%** |
+
+## Revision Log
+
+- **Oct 2026:** Sources & uses now refinance the $300M of existing net debt (previously it dropped out of the deal), raising the sponsor cheque from $6,582M to $6,882M. The sensitivity tables were dividing exit equity by the purchase price rather than the sponsor's equity cheque; they now compute sponsor equity correctly, take their axes from the Assumptions tab, and reconcile to the Returns tab at the base case. Amortization and sweep are capped at the outstanding balance, with excess cash tracked into net debt. Returns move from 28.1% / 3.5x to 27.0% / 3.3x.
+- **Data note:** LTM figures pre-date DKS's Sept 2025 acquisition of Foot Locker and exclude lease liabilities; the model is an illustrative standalone LBO as of February 2026.
 
 ---
 
