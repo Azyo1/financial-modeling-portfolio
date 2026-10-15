@@ -15,6 +15,7 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 | [AMD — DCF Coverage Update](./amd-dcf/) | 10-Year DCF + Scenarios | UNDERWEIGHT $405 PT · -29.0% vs $570.82 · Oct 2026 refresh | ✅ Complete |
 | [Ferrari N.V. — Equity Research](./ferrari-dcf/) | DCF + Trading Comps (Blended) | OVERWEIGHT $480 PT · +36.4% upside · Luce EV catalyst | ✅ Complete |
 | [Nautilus Biotechnology — Initiation](./nautilus-dcf/) | DCF (Pre-Revenue Life Sci Tools) | OVERWEIGHT $6.00 PT · +102% upside · Voyager proteomics | ✅ Complete |
+| [IBM — Segment DCF + Quantum Option](./ibm-dcf/) | 10-Year Segment DCF + Scenarios | OVERWEIGHT $320 PT · +40.4% vs $227.88 · Quantum priced at zero | ✅ Complete |
 
 ---
 
@@ -30,4 +31,4 @@ Buy-side and sell-side valuation models built to institutional standards. Each m
 
 ---
 
-> *Built to replicate sell-side and buy-side valuation workflows. Pricing dates: AMD Oct 14, 2026; BlackBerry, Ferrari and Nautilus April 2026; DKS February 2026. Last revised October 2026 (model audit — see each folder's revision log).*
+> *Built to replicate sell-side and buy-side valuation workflows. Pricing dates: AMD and IBM Oct 14, 2026; BlackBerry, Ferrari and Nautilus April 2026; DKS February 2026. Last revised October 2026 (model audit — see each folder's revision log).*
